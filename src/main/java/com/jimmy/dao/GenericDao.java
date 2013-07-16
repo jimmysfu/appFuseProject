@@ -49,7 +49,7 @@ public interface GenericDao <T, PK extends Serializable> {
      *
      * @param id the identifier (primary key) of the object to get
      * @return a populated object
-     * @see org.springframework.orm.ObjectRetrievalFailureException
+     * @see org.springframework.orm.ObjectRetrievalFailureException.
      */
     T get(PK id);
 
