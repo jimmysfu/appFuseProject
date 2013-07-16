@@ -1,6 +1,5 @@
 package com.jimmy.dao.hibernate;
 
-import java.util.Collection;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.lucene.analysis.Analyzer;
@@ -17,6 +16,8 @@ import org.hibernate.search.Search;
 import org.hibernate.search.SearchFactory;
 import org.hibernate.search.indexes.IndexReaderAccessor;
 
+import java.util.Collection;
+
 /**
  * Utility class to generate lucene queries for hibernate search and perform full reindexing.
  *
@@ -26,7 +27,7 @@ class HibernateSearchTools {
     protected static final Log log = LogFactory.getLog(HibernateSearchTools.class);
 
     /**
-     * Generates a lucene query to search for a given term in all the indexed fields of a class
+     * Generates a lucene query to search for a given term in all the indexed fields of a class.
      *
      * @param searchTerm the term to search for
      * @param searchedEntity the class searched
